@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.html">
+</head>
+<body>
+    <center>
+        <h1>shipping cost</h1><br>
+
+        <form action="contain">
+            
+            <label for="weight">weight</label><br>
+            <input type="text" value="7" id="weight" min="1"/><br>
+
+            <label for="destination">destination</label><br>
+            <select id="destination">
+              <option value="">choose location</option>
+              <option value="Abeokuta">Abeokuta</option>
+              <option value="Lagos">Lagos</option>
+              <option value="Ibadan">Ibadan</option>
+              <option value="Other">Others</option>
+            </select>
+            <br>
+
+            <input type="checkbox" id="express"/>
+            <label for="tick">Express Delivery (50% surchange)</label><br>
+
+           
+            <p id="results"></p>
+
+
+        </form>
+
+         <button onclick="calculateCost()">calculate cost</button>
+    </center>
+
+    <script src="./script.js"></script>
+    
+</body>
+</html>
