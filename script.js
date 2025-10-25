@@ -1,7 +1,7 @@
 function calculateCost(){
     const packageWeight = parseFloat(document.getElementById("weight").value);
     const destinationZone = document.getElementById("destination").value;
-    const isExpressDelivery = document.getElementById("weight").checked;
+    const isExpressDelivery = document.getElementById("express").checked;
 
 
 
@@ -12,15 +12,15 @@ function calculateCost(){
     let totalCost = baseCost
 
     if( destinationZone === "ibadan"){
-        totalCost + 1000;  // add N5000 for ibadan
+        totalCost += 1000;  // add N5000 for ibadan
     }
     if(destinationZone === "lagos"){
-        totalCost + 1000;  // add N5000 for lagos
+        totalCost += 1000;  // add N5000 for lagos
     }
     
     if(packageWeight > OVERWEIGHT_LIMIT) {
         //totalCost = totalCost + overWeight fee
-        totalCost + OVERWEIGHT_FEE;
+        totalCost += OVERWEIGHT_FEE;
     }
 
     if(isExpressDelivery){
@@ -31,7 +31,7 @@ function calculateCost(){
     }
 
     const resultElement = document.getElementById("results");
-    const message = `The total const for your ${packageWeight}kg package to ${destinationZone} is ${totalCost}`;
+    const message = `The total cost for your ${packageWeight}kg package to ${destinationZone} is ${totalCost}`;
     resultElement.innerHTML = message;
 
 

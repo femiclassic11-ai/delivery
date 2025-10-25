@@ -1,0 +1,101 @@
+/* ======== RESET & GLOBAL STYLES ======== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #007bff, #00bcd4);
+  color: #222;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ======== CONTAINER ======== */
+form {
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 350px;
+  text-align: center;
+}
+
+h1 {
+  color: #fff;
+  margin-bottom: 25px;
+  text-transform: capitalize;
+}
+
+/* ======== INPUTS & SELECT ======== */
+input[type="number"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+input[type="number"]:focus,
+select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 4px #007bff;
+}
+
+/* ======== CHECKBOX ======== */
+input[type="checkbox"] {
+  margin-right: 6px;
+  transform: scale(1.2);
+}
+
+/* ======== BUTTON ======== */
+button {
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #0056b3;
+  transform: scale(1.03);
+}
+
+/* ======== RESULTS TEXT ======== */
+#results {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+}
+
+/* ======== RESPONSIVE DESIGN ======== */
+@media (max-width: 500px) {
+  form {
+    width: 95%;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  button {
+    font-size: 15px;
+  }
+}

@@ -4,29 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./index.html">
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <center>
         <h1>shipping cost</h1><br>
 
-        <form action="contain">
+        <form>
             
             <label for="weight">weight</label><br>
-            <input type="text" value="7" id="weight" min="1"/><br>
+            <input type="number" id="weight" min="1" placeholder="Enter weight(kg)"/><br>
 
             <label for="destination">destination</label><br>
             <select id="destination">
               <option value="">choose location</option>
-              <option value="Abeokuta">Abeokuta</option>
-              <option value="Lagos">Lagos</option>
-              <option value="Ibadan">Ibadan</option>
-              <option value="Other">Others</option>
+              <option value="abeokuta">Abeokuta</option>
+              <option value="lagos">Lagos</option>
+              <option value="ibadan">Ibadan</option>
+              <option value="other">Others</option>
             </select>
             <br>
 
             <input type="checkbox" id="express"/>
-            <label for="tick">Express Delivery (50% surchange)</label><br>
+            <label for="express">Express Delivery (50% surcharge)</label><br>
 
            
             <p id="results"></p>
